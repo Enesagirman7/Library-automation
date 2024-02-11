@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F269F2A5-EBAB-47DB-94EF-7CF4C6F3E8D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kutuphaneProje</RootNamespace>
+    <AssemblyName>kutuphaneProje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaEkranForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaEkranForm.Designer.cs">
+      <DependentUpon>anaEkranForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emanetBilgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetBilgiForm.Designer.cs">
+      <DependentUpon>emanetBilgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmanetTablo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmanetTablo.Designer.cs">
+      <DependentUpon>EmanetTablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisForm.Designer.cs">
+      <DependentUpon>girisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapBilgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapBilgiForm.Designer.cs">
+      <DependentUpon>kitapBilgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapTablo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapTablo.Designer.cs">
+      <DependentUpon>kitapTablo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="projeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uyeBilgiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeBilgiForm.Designer.cs">
+      <DependentUpon>uyeBilgiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uyeTablo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeTablo.Designer.cs">
+      <DependentUpon>uyeTablo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anaEkranForm.resx">
+      <DependentUpon>anaEkranForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetBilgiForm.resx">
+      <DependentUpon>emanetBilgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmanetTablo.resx">
+      <DependentUpon>EmanetTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisForm.resx">
+      <DependentUpon>girisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapBilgiForm.resx">
+      <DependentUpon>kitapBilgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapTablo.resx">
+      <DependentUpon>kitapTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="uyeBilgiForm.resx">
+      <DependentUpon>uyeBilgiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uyeTablo.resx">
+      <DependentUpon>uyeTablo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="projeDataSet.xsc">
+      <DependentUpon>projeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projeDataSet.xss">
+      <DependentUpon>projeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\düzenle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\üye listele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitap ekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sil1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\düzenle1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitapp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emanet ver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almak png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vermek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listele1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\uyekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\uyesil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\uyeduzenle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\üye listele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\kitap ekle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\kitaplistele.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\emanetver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\emanetal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resimler\emanetlistele.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
